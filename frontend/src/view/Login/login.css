@@ -1,0 +1,24 @@
+.login-content{
+    width: 100%;
+    padding: 15%;
+    margin: auto;
+    background-color: #614ea6;
+    height: 100vh;
+}
+.btn-login{
+    background-color: aliceblue;
+    color: #614ea6;
+}
+.btn-login:hover{
+    background-color: #f21667;
+    color: aliceblue;
+    transition: 2s ease-in-out;
+}
+.opcao-login a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: 2s ease-in-out;
+}
+.opcao-login a:hover{
+    color: #f21667;
+}
