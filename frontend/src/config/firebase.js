@@ -5,6 +5,7 @@ import 'firebase/compat/firestore';
 
 
 const firebaseConfig = {
+
     apiKey: "AIzaSyB2WbvImAySW9FlmZF9V-WD76rVlB6Afz8",
     authDomain: "eventos-ba2e6.firebaseapp.com",
     databaseURL: "https://eventos-ba2e6-default-rtdb.firebaseio.com",
