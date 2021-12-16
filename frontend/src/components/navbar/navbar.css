@@ -1,0 +1,10 @@
+.navbar{
+    background-color: blueviolet;
+}
+.nav-item a{
+    color: aliceblue;
+    transition: .5s ease-in;
+}
+.nav-item a:hover{
+    color:crimson;
+}
