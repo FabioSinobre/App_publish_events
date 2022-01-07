@@ -1,8 +1,12 @@
 import React from 'react';
 import './navbar.css';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 
 function NavBar() {
+
+    const dispatch = useDispatch(); 
+
     return (
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
@@ -15,12 +19,29 @@ function NavBar() {
                         <li className="nav-item">
                             <Link className="nav-link" aria-current="page" to="/">Home</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" aria-current="page" to="/novousuario">Novo Usuário</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" aria-current="page" to="/login">Login</Link>
-                        </li>
+                        {
+                            useSelector(state =>state.usuarioLogado) > 0 ?
+                        <>
+                            <li className="nav-item">
+                                <Link className="nav-link" aria-current="page" to="">Publicar Evento</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" aria-current="page" to="">Menu Eventos</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" aria-current="page" to="" onClick={() => dispatch({type: 'LOG_OUT'})   }>Sair</Link>
+                            </li>
+                        </>
+                        :
+                        <>
+                            <li className="nav-item">
+                                <Link className="nav-link" aria-current="page" to="/novousuario">Novo Usuário</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" aria-current="page" to="/login">Login</Link>
+                            </li>
+                        </>
+                        }
                     </ul>
                 </div>
             </div>
