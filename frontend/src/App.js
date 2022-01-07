@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import Login from './view/Login';
 import NovoUsuario from './view/usuarioNovo';
 import Home from './view/home';
+import RecuperarSenha from './view/recuperarSenha';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/novousuario" element={<NovoUsuario />} />
+          <Route path="/recuperarsenha" element={<RecuperarSenha />} />
         </Routes>
       </Router>
     </Provider>

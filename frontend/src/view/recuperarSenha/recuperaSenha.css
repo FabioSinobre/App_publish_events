@@ -1,0 +1,8 @@
+.btn-enviar{
+    background-color: #614Ea6;
+    color: aliceblue;
+}
+.btn-enviar:hover{
+    background-color: #f21667;
+    color: aliceblue;
+}

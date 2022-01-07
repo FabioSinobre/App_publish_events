@@ -22,6 +22,7 @@ function NavBar() {
                         {
                             useSelector(state =>state.usuarioLogado) > 0 ?
                         <>
+                            
                             <li className="nav-item">
                                 <Link className="nav-link" aria-current="page" to="">Publicar Evento</Link>
                             </li>
@@ -31,6 +32,7 @@ function NavBar() {
                             <li className="nav-item">
                                 <Link className="nav-link" aria-current="page" to="" onClick={() => dispatch({type: 'LOG_OUT'})   }>Sair</Link>
                             </li>
+                            <i class="far fa-smile-wink text-white fa-2x"></i>
                         </>
                         :
                         <>

@@ -34,7 +34,6 @@ function Login() {
 
             <div className="login-content d-flex aling-center">
             
-
             {
                 useSelector(state => state.usuarioLogado) > 0 ? 
                 
@@ -42,8 +41,8 @@ function Login() {
                  : null
             }
 
-                <form className="mx-auto ">
-                    <img className="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57" />
+                <form className="mx-auto text-center">
+                    <i class="far fa-smile-wink text-white fa-5x"></i>
                     <h1 className="h3 mb-3 fw-normal text-white text-center fw-bold">Login</h1>
 
                     <input onChange={(e) => setEmail(e.target.value)} type="email" class="form-control my-3" id="floatingInput" placeholder="e-mail" />
@@ -55,7 +54,7 @@ function Login() {
                         {msgTipo === 'erro' && <span><strong>Ops!</strong> verifique se a senha ou e-mail estão corretos! &#128546;</span>}
                     </div>
                     <div className="opcao-login">
-                        <Link to='/recuperasenha' className="mx-2">Recuperar senha</Link>
+                        <Link to='/recuperarsenha' className="mx-2">Recuperar senha</Link>
                         <span className="text-white">&#9816;</span>
                         <Link to='/novousuario' className="mx-2">Novo Cadastro</Link>
                     </div>
