@@ -8,6 +8,7 @@ import Login from './view/Login';
 import NovoUsuario from './view/usuarioNovo';
 import Home from './view/home';
 import RecuperarSenha from './view/recuperarSenha';
+import PublicarEventos from './view/criarEvento';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/novousuario" element={<NovoUsuario />} />
           <Route path="/recuperarsenha" element={<RecuperarSenha />} />
+          <Route path="/publicarevento" element={<PublicarEventos />} />
         </Routes>
       </Router>
     </Provider>

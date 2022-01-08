@@ -24,7 +24,7 @@ function NavBar() {
                         <>
                             
                             <li className="nav-item">
-                                <Link className="nav-link" aria-current="page" to="">Publicar Evento</Link>
+                                <Link className="nav-link" aria-current="page" to="/publicarevento">Publicar Evento</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" aria-current="page" to="">Menu Eventos</Link>
